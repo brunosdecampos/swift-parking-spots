@@ -1,0 +1,23 @@
+{
+    "spots":
+    [
+        {
+            "id": "0",
+            "type": "available",
+            "latitude": "43.672605",
+            "longitude": "-79.363648"
+        },
+        {
+            "id": "1",
+            "type": "special",
+            "latitude": "43.703333",
+            "longitude": "-79.363041"
+        },
+        {
+            "id": "2",
+            "type": "unavailable",
+            "latitude": "43.674193",
+            "longitude": "-79.399989"
+        },
+    ]
+}

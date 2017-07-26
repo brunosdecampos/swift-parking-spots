@@ -1,0 +1,110 @@
+{
+    "spots":
+    [
+        {
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/spot-detail-1.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/user1.jpg",
+            "name": "Thomas Williams",
+            "phone-number": "+1 (647) 622-6448",
+            "type": "available",
+            "address": "322 Sherbourne street, Toronto, ON, Canada",
+            "weekdays":
+            [
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                }
+            ],
+            "from": "8 am",
+            "to": "6 pm",
+            "price": 10
+        },
+        {
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/spot-detail-1.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/user1.jpg",
+            "name": "Thomas Williams 2",
+            "phone-number": "+1 (647) 953-6380",
+            "type": "special",
+            "address": "72 Queen street, Toronto, ON, Canada",
+            "weekdays":
+            [
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                }
+            ],
+            "from": "12 am",
+            "to": "12 pm",
+            "price": 8
+        },
+        {
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/spot-detail-1.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/user1.jpg",
+            "name": "Thomas Williams 3",
+            "phone-number": "+1 (647) 732-5624",
+            "type": "unavailable",
+            "address": "418 Carlton street, Toronto, ON, Canada",
+            "weekdays":
+            [
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                }
+            ],
+            "from": "10 am",
+            "to": "12 pm",
+            "price": 4
+        },
+    ]
+}
