@@ -35,13 +35,6 @@ class Spot {
         for item in data["weekdays"].arrayValue {
             self.weekdays.append(item["day"].boolValue)
         }
-        
-//        for (index, item) in data["weekdays"] {
-//            if item["day"].boolValue == true {
-//                self.weekdays.append(weekdays[Int(index)!])
-//            }
-//        }
-        
     }
     
     init(type: String, address: String, image: String, time: String, price: Int, weekdays: String) {

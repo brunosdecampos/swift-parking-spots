@@ -11,8 +11,6 @@ import GoogleMaps
 
 class MapsViewController: UIViewController, GMSMapViewDelegate {
     
-//    var latitude: Float?
-//    var longitude: Float?
     var citySelected: Int?
     var cities: Array<City>!
     var city: Int!
@@ -26,12 +24,15 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
         super.viewDidLoad()
         
         // Removing navigation back button
-//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.hidesBackButton = true
         
-        self.city = 0
-//        self.latitudes = [43.665528, 49.265108, 45.382053, 46.829042]
-//        self.longitudes = [-79.369828, -123.118413, -75.707026, -71.205320]
+        if UserDefaults.standard.string(forKey: "City") == nil {
+            self.city = 0
+        }
+        else if Int(UserDefaults.standard.string(forKey: "City")!)! >= 0 {
+            self.city = Int(UserDefaults.standard.string(forKey: "City")!)!
+        }
+        
         self.latitudes = []
         self.longitudes = []
         
@@ -62,9 +63,6 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
             let json2 = JSON(data: data2)
             
             spots = json2["spots"].arrayValue
-//            for item in json["spots"].arrayValue {
-//                spots.append(item)
-//            }
         }
         
         // Create a GMSCameraPosition that tells the map to display the coordinate
@@ -74,11 +72,8 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
         self.view = mapView
         
         var parkingIcon: String
-        // var index: Int
         
         if spots.count > 0 {
-            // index = 0
-            
             for item in spots {
                 if item["type"].stringValue == "available" {
                     parkingIcon = "green-parking-icon"
@@ -96,8 +91,6 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
                 marker.icon = UIImage(named: parkingIcon)
                 marker.userData = Int(item["id"].stringValue) // index
                 marker.map = mapView
-                
-                // index += 1
             }
         }
     }
@@ -122,6 +115,6 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
 }
 

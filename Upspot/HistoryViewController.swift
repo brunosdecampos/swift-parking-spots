@@ -18,7 +18,6 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         
         // Removing navigation back button
-//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.hidesBackButton = true
         
         spots = Array<Spot>()
@@ -26,17 +25,6 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
         NotificationCenter.default.addObserver(self, selector: #selector(BookingViewController.saveCoreData), name: .UIApplicationWillResignActive, object: nil)
         
         loadCoreData()
-        
-//        if let file = Bundle(for: AppDelegate.self).path(forResource: "spot-details", ofType: "json") {
-//            let data = NSData(contentsOfFile: file)! as Data
-//            let json = JSON(data: data)
-//            
-//            for (key, item) in json["spots"] {
-//                if Int(key) == selectedSpot! {
-//                    spots.append(Spot(data: item))
-//                }
-//            }
-//        }
     }
     
     func loadCoreData() {
@@ -101,15 +89,4 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
         super.didReceiveMemoryWarning()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

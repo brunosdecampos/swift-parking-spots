@@ -2,8 +2,8 @@
     "spots":
     [
         {
-            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/spot-detail-1.jpg",
-            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/user1.jpg",
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/spot-detail-1.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/user1.jpg",
             "name": "Thomas Williams",
             "phone-number": "+1 (647) 622-6448",
             "type": "available",
@@ -37,9 +37,9 @@
             "price": 10
         },
         {
-            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/spot-detail-1.jpg",
-            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/user1.jpg",
-            "name": "Thomas Williams 2",
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/spot-detail-2.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/user2.jpg",
+            "name": "Sarah Thompson",
             "phone-number": "+1 (647) 953-6380",
             "type": "special",
             "address": "72 Queen street, Toronto, ON, Canada",
@@ -72,11 +72,46 @@
             "price": 8
         },
         {
-            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/spot-detail-1.jpg",
-            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/user1.jpg",
-            "name": "Thomas Williams 3",
-            "phone-number": "+1 (647) 732-5624",
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/spot-detail-4.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/user4.jpg",
+            "name": "Emily Wilson",
+            "phone-number": "+1 (416) 937-6245",
             "type": "unavailable",
+            "address": "67 Jarvis street, Toronto, ON, Canada",
+            "weekdays":
+            [
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                }
+            ],
+            "from": "8 am",
+            "to": "12 pm",
+            "price": 6
+        },
+        {
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/spot-detail-3.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/user3.jpg",
+            "name": "Nathan Jones",
+            "phone-number": "+1 (647) 732-5624",
+            "type": "available",
             "address": "418 Carlton street, Toronto, ON, Canada",
             "weekdays":
             [
@@ -105,6 +140,181 @@
             "from": "10 am",
             "to": "12 pm",
             "price": 4
+        },
+        {
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/spot-detail-5.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/user5.jpg",
+            "name": "Alex Anderson",
+            "phone-number": "+1 (416) 597-5302",
+            "type": "special",
+            "address": "4343 Church street, Vancouver, BC, Canada",
+            "weekdays":
+            [
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                }
+            ],
+            "from": "12 am",
+            "to": "12 pm",
+            "price": 10
+        },
+        {
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/spot-detail-6.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/user6.jpg",
+            "name": "Rachel Moore",
+            "phone-number": "+1 (647) 927-5454",
+            "type": "available",
+            "address": "243 Glengarry street, Vancouver, BC, Canada",
+            "weekdays":
+            [
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                }
+            ],
+            "from": "10 am",
+            "to": "10 pm",
+            "price": 9
+        },
+        {
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/spot-detail-7.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/user7.jpg",
+            "name": "Laura Robinson",
+            "phone-number": "+1 (416) 567-2378",
+            "type": "unavailable",
+            "address": "54 Bloor street, Ottawa, ON, Canada",
+            "weekdays":
+            [
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                }
+            ],
+            "from": "9 am",
+            "to": "12 pm",
+            "price": 7
+        },
+        {
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/spot-detail-8.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/user8.jpg",
+            "name": "Ashely Walker",
+            "phone-number": "+1 (647) 456-6895",
+            "type": "available",
+            "address": "65 Davidson street, Ottawa, ON, Canada",
+            "weekdays":
+            [
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                }
+            ],
+            "from": "9 am",
+            "to": "10 pm",
+            "price": 5
+        },
+        {
+            "image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/spot-detail-9.jpg",
+            "user-image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/user9.jpg",
+            "name": "Ethan Phillips",
+            "phone-number": "+1 (416) 563-7892",
+            "type": "available",
+            "address": "937 Dundas street, Quebec, ON, Canada",
+            "weekdays":
+            [
+                {
+                    "day": "false"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "true"
+                },
+                {
+                    "day": "false"
+                }
+            ],
+            "from": "6 am",
+            "to": "12 pm",
+            "price": 12
         },
     ]
 }

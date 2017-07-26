@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class HistoryTableViewCellController: UITableViewCell {
-
+    
     @IBOutlet weak var spotImage: UIImageView!
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var days: UILabel!
@@ -20,7 +20,7 @@ class HistoryTableViewCellController: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

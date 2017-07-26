@@ -13,17 +13,16 @@ class CitiesViewController: UIViewController, UITableViewDataSource, UITableView
     var citySelected: Int?
     var latitude: Float?
     var longitude: Float?
-    
     var JSONFile: String?
     var cities: Array<City>!
     
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Removing navigation back button
-//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.hidesBackButton = true
         
         cities = Array<City>()
@@ -39,8 +38,8 @@ class CitiesViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
         
-        Alert.deleteCoreData(entity: "Spots")
-        Alert.deleteCoreData(entity: "Users")
+        // Alert.deleteCoreData(entity: "Spots")
+        // Alert.deleteCoreData(entity: "Users")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,31 +58,18 @@ class CitiesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-//        let currCell = tableView.cellForRow(at: indexPath) as! CitiesTableViewCellController
-//        self.leagueSelected = currCell.teamName!.text
         self.citySelected = indexPath.row
-//        self.latitude = currCell.latitude
-//        self.longitude = currCell.longitude
-
+        defaults.set(indexPath.row, forKey: "City")
+        
         return indexPath
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let receiverViewController = segue.destination as! MapsViewController
-//        receiverViewController.weekSelected = self.weekSelected
-//        receiverViewController.leagueSelected = self.leagueSelected
-//        print(self.latitude)
-//        print(self.longitude)
         
         if self.citySelected != nil {
             receiverViewController.citySelected = self.citySelected!
         }
-//        if self.latitude != nil {
-//            receiverViewController.latitude = self.latitude!
-//        }
-//        if self.longitude != nil {
-//            receiverViewController.longitude = self.longitude!
-//        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -27,7 +27,6 @@ class BookingViewController: UIViewController {
     var totalSelectedDays: Int = 0
     var spotType: String?
     var allowBooking: Bool?
-    //var objects = Array<JSON>()
     var weekDaysClickCounter = Array<Int>()
     var availableDays = Array<Bool>()
     var selectedWeekdays = Array<String>()
@@ -40,7 +39,6 @@ class BookingViewController: UIViewController {
         super.viewDidLoad()
         
         // Removing navigation back button
-//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.hidesBackButton = true
         
         userImage.layer.cornerRadius = userImage.frame.size.width / 2
@@ -51,7 +49,6 @@ class BookingViewController: UIViewController {
                 let data = NSData(contentsOfFile: file)! as Data
                 let json = JSON(data: data)
                 self.parseJSON(json: json)
-                //self.objects = json["spots"].arrayValue
             }
             
             setAllImages()
@@ -66,27 +63,19 @@ class BookingViewController: UIViewController {
         spots = Array<Spot>()
         users = Array<User>()
         
-        for (key, item) in json["spots"] {
-//            if Int(key) == selectedSpot! {
-                spots.append(Spot(data: item))
-                users.append(User(data: item))
-//                spots.insert(Spot(data: item), at: selectedSpot!)
-//                users.insert(User(data: item), at: selectedSpot!)
-//            }
+        for (_, item) in json["spots"] {
+            spots.append(Spot(data: item))
+            users.append(User(data: item))
         }
-        
-//        for item in json["spots"].arrayValue {
-//            spots.append(Spot(data: item))
-//        }
     }
     
     func setAllImages() {
-        self.loadImage(component: "spot", imageURL: spots[selectedSpot!].image) // spots[selectedSpot!]["image"].stringValue
-        self.loadImage(component: "user", imageURL: users[selectedSpot!].image) // spots[selectedSpot!]["user-image"].stringValue
+        self.loadImage(component: "spot", imageURL: spots[selectedSpot!].image)
+        self.loadImage(component: "user", imageURL: users[selectedSpot!].image)
         
         var marker: String
         
-        if spots[selectedSpot!].type == "available" { // objects[selectedSpot!]["type"].stringValue
+        if spots[selectedSpot!].type == "available" {
             marker = "green-parking-icon"
             self.allowBooking = true
         }
@@ -99,7 +88,7 @@ class BookingViewController: UIViewController {
             self.allowBooking = false
         }
         
-        self.spotType = spots[selectedSpot!].type // objects[selectedSpot!]["type"].stringValue
+        self.spotType = spots[selectedSpot!].type
         self.loadImage(component: "marker", imageURL: marker)
     }
     
@@ -132,8 +121,8 @@ class BookingViewController: UIViewController {
     }
     
     func setAllComponents() {
-        name.text = users[selectedSpot!].name // objects[selectedSpot!]["name"].stringValue
-        phoneNumber.text = users[selectedSpot!].phoneNumber // objects[selectedSpot!]["phone-number"].stringValue
+        name.text = users[selectedSpot!].name
+        phoneNumber.text = users[selectedSpot!].phoneNumber
         
         var availability: String
         
@@ -147,38 +136,21 @@ class BookingViewController: UIViewController {
             availability = "Unavailable spot at"
         }
         
-        address.text = "\(availability) \(spots[selectedSpot!].address)" // objects[selectedSpot!]["address"].stringValue
+        address.text = "\(availability) \(spots[selectedSpot!].address)"
         
-//        var buttonColour: UIColor
-//        var textButtonColour: UIColor
-        //var count: Int = 0
-        
-        //for day in objects[selectedSpot!]["weekdays"].arrayValue {
         for (index, day) in spots[selectedSpot!].weekdays.enumerated() {
-            //print(index)
-            
-//            print("Button:")
-//            print(weekDays[count])
-            //if day["day"].stringValue == "true" {
-            
             if day == true {
-                setButtonColourAsAvailable(button: weekDays[index]) // setButtonColourAsAvailable(button: weekDays[count])
+                setButtonColourAsAvailable(button: weekDays[index])
             }
             else {
-                setButtonColourAsUnavailable(button: weekDays[index]) // setButtonColourAsUnavailable(button: weekDays[count])
+                setButtonColourAsUnavailable(button: weekDays[index])
             }
             
-//            weekDays[count].backgroundColor = buttonColour
-//            weekDays[count].setTitleColor(textButtonColour, for: UIControlState.normal)
-            
-            //availableDays.append(NSString(string: day["day"].stringValue).boolValue)
             availableDays.append(day)
             weekDaysClickCounter.append(0)
-            
-            //count += 1
         }
         
-        time.text = "From \(spots[selectedSpot!].fromTime) to \(spots[selectedSpot!].toTime)"//time.text = "From \(objects[selectedSpot!]["from"].stringValue) to \(objects[selectedSpot!]["to"].stringValue)"
+        time.text = "From \(spots[selectedSpot!].fromTime) to \(spots[selectedSpot!].toTime)"
         price.text = "$\(spots[selectedSpot!].price)"
     }
     
@@ -276,7 +248,7 @@ class BookingViewController: UIViewController {
     // Calculate final price for the spot with selected week days
     func calculateFinalPrice() {
         if totalSelectedDays > 0 {
-            totalPrice = spots[selectedSpot!].price * self.totalSelectedDays // totalPrice = Int(self.objects[selectedSpot!]["price"].stringValue)! * self.totalSelectedDays
+            totalPrice = spots[selectedSpot!].price * self.totalSelectedDays
         }
         
         price.text = "$\(totalPrice)"
@@ -303,12 +275,6 @@ class BookingViewController: UIViewController {
         for (key, item) in elements {
             entity.setValue(item, forKey: key)
         }
-        
-        //entity.setValue(spots[selectedSpot!].address, forKey: "address")
-//        spotEntity.setValue(weekdays, forKey: "weekdays")
-//        spotEntity.setValue(spots[selectedSpot!].image, forKey: "image")
-//        spotEntity.setValue(totalPrice, forKey: "price")
-//        spotEntity.setValue(time, forKey: "time")
         
         do {
             try managedContext.save()

@@ -10,14 +10,50 @@
         {
             "id": "1",
             "type": "special",
-            "latitude": "43.703333",
-            "longitude": "-79.363041"
+            "latitude": "43.7062285",
+            "longitude": "-79.3464804"
         },
         {
             "id": "2",
             "type": "unavailable",
-            "latitude": "43.674193",
-            "longitude": "-79.399989"
+            "latitude": "43.662655",
+            "longitude": "-79.432143"
+        },
+        {
+            "id": "3",
+            "type": "available",
+            "latitude": "43.686104",
+            "longitude": "-79.394316"
+        },
+        {
+            "id": "4",
+            "type": "special",
+            "latitude": "49.222747",
+            "longitude": "-123.128713"
+        },
+        {
+            "id": "5",
+            "type": "available",
+            "latitude": "49.250543",
+            "longitude": "-123.068288"
+        },
+        {
+            "id": "6",
+            "type": "unavailable",
+            "latitude": "45.344905",
+            "longitude": "-75.725546"
+        },
+        {
+            "id": "7",
+            "type": "available",
+            "latitude": "45.311113",
+            "longitude": "-75.683661"
+        },
+        {
+            "id": "8",
+            "type": "available",
+            "latitude": "46.842195",
+            "longitude": "-71.236218"
         },
     ]
 }

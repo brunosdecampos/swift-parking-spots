@@ -8,7 +8,8 @@
 
 import Foundation
 import UIKit
-import CoreData //////////////
+import CoreData
+
 public class Alert {
     
     // Display the most basic message alert
@@ -19,6 +20,7 @@ public class Alert {
         viewController.present(alert, animated: true, completion: nil)
     }
     
+    // Deleting DataCore for testing purposes
     class func deleteCoreData(entity: String) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext

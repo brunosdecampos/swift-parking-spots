@@ -7,25 +7,25 @@
             [
             	{
 					"name": "Toronto",
-            		"image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/toronto.jpg",
+            		"image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/toronto.jpg",
                     "latitude": "43.665528",
                     "longitude": "-79.369828"
             	},
             	{
 					"name": "Vancouver",
-            		"image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/vancouver.jpg",
+            		"image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/vancouver.jpg",
                     "latitude": "49.265108",
                     "longitude": "-123.118413"
             	},
             	{
 					"name": "Ottawa",
-            		"image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/ottawa.jpg",
+            		"image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/ottawa.jpg",
                     "latitude": "45.382053",
                     "longitude": "-75.707026"
             	},
             	{
 					"name": "Quebec",
-            		"image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Sports-League/master/Sports%20League/quebec.jpg",
+            		"image": "https://raw.githubusercontent.com/brunosdecampos/Swift-Parking-Spots/master/Upspot/quebec.jpg",
                     "latitude": "46.829042",
                     "longitude": "-71.205320"
             	}
