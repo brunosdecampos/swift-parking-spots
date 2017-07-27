@@ -15,9 +15,6 @@
         <array key="AmsiPro-Bold.ttf">
             <string>AmsiPro-Bold</string>
         </array>
-        <array key="AmsiPro-Light.ttf">
-            <string>AmsiPro-Light</string>
-        </array>
         <array key="AmsiPro-Regular.ttf">
             <string>AmsiPro-Regular</string>
         </array>
@@ -384,7 +381,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGk-TO-BeV">
-                                                    <rect key="frame" x="137" y="13" width="224" height="48"/>
+                                                    <rect key="frame" x="137" y="10" width="224" height="48"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="322 Sherbourne Street, Toronto, ON, Canada">
@@ -398,7 +395,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMj-3p-NpR">
-                                                    <rect key="frame" x="137" y="63" width="46" height="29"/>
+                                                    <rect key="frame" x="137" y="62" width="46" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Days:">
@@ -412,7 +409,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQh-ce-Q0N">
-                                                    <rect key="frame" x="137" y="86" width="46" height="29"/>
+                                                    <rect key="frame" x="137" y="81" width="46" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Time:">
@@ -426,7 +423,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cje-4F-aX8">
-                                                    <rect key="frame" x="179" y="63" width="182" height="29"/>
+                                                    <rect key="frame" x="179" y="62" width="182" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Mo, Tu, We, Th, Fr, Sa, Su">
@@ -440,10 +437,24 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjD-Ao-epH">
-                                                    <rect key="frame" x="179" y="86" width="116" height="29"/>
+                                                    <rect key="frame" x="179" y="81" width="116" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="10 am - 12 pm">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="13" name="AmsiPro-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVr-kR-dRk">
+                                                    <rect key="frame" x="179" y="100" width="116" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Regular">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <font key="NSFont" size="13" name="AmsiPro-Regular"/>
@@ -465,6 +476,20 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOD-KP-O1N">
+                                                    <rect key="frame" x="137" y="100" width="46" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Type:">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="13" name="AmsiPro-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -473,6 +498,7 @@
                                             <outlet property="price" destination="Yit-vi-W6t" id="IlN-1l-2kt"/>
                                             <outlet property="spotImage" destination="VlG-E6-LsM" id="PWf-yp-XI8"/>
                                             <outlet property="time" destination="GjD-Ao-epH" id="ncM-1W-bbo"/>
+                                            <outlet property="type" destination="XVr-kR-dRk" id="dFZ-Jc-SPx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -485,9 +511,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="akN-Wg-rfb">
-                        <barButtonItem key="leftBarButtonItem" title="Cities" id="9Aq-PG-Pai">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="9Aq-PG-Pai">
                             <connections>
-                                <segue destination="r6S-7y-fIQ" kind="show" id="T3x-Pt-gLA"/>
+                                <action selector="clearCoreData:" destination="ErL-bZ-R9s" id="axf-dG-qKA"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Spots" id="6Fw-lp-hiK">
@@ -496,6 +522,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="2D0-YR-dou" id="nQJ-e6-Gbw"/>
+                        <segue destination="r6S-7y-fIQ" kind="show" identifier="CitySegue" id="kNk-KE-HgI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixB-KQ-tya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -519,8 +549,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hSy-Ji-0CJ"/>
-        <segue reference="Oib-Fm-MDH"/>
+        <segue reference="kNk-KE-HgI"/>
         <segue reference="lQE-rR-MaP"/>
+        <segue reference="u5G-cI-eZI"/>
     </inferredMetricsTieBreakers>
 </document>

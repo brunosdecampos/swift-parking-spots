@@ -15,6 +15,7 @@ class HistoryTableViewCellController: UITableViewCell {
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var days: UILabel!
     @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var type: UILabel!
     @IBOutlet weak var price: UILabel!
     
     override func awakeFromNib() {
@@ -30,6 +31,14 @@ class HistoryTableViewCellController: UITableViewCell {
         self.days.text = spot.stringWeekdays
         self.time.text = spot.stringTime
         self.price.text = "$\(spot.price)"
+        
+        if spot.type == "special" {
+            self.type.text = "Special"
+        }
+        else {
+            self.type.text = "Regular"
+        }
+        
         self.loadSpotImage(imageURL: spot.image)
         
         setTextWithLineSpacing(label: self.address, text: address.text!, lineSpacing: 7)

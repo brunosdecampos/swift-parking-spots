@@ -11,6 +11,8 @@ import CoreData
 
 class HistoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet var tableView: UITableView!
+    
     var spots: Array<Spot>?
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
@@ -83,6 +85,13 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
         } else {
             return UITableViewCell()
         }
+    }
+    
+    @IBAction func clearCoreData(_ sender: UIBarButtonItem) {
+        CoreData.deleteCoreData(entity: "Spots")
+        CoreData.deleteCoreData(entity: "Users")
+        
+        performSegue(withIdentifier: "CitySegue", sender: nil)
     }
     
     override func didReceiveMemoryWarning() {

@@ -37,9 +37,6 @@ class CitiesViewController: UIViewController, UITableViewDataSource, UITableView
                 }
             }
         }
-        
-        // Alert.deleteCoreData(entity: "Spots")
-        // Alert.deleteCoreData(entity: "Users")
     }
     
     override func viewWillAppear(_ animated: Bool) {
